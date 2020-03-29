@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <a href="{{ url_for('index') }}" class="button21">В меню</a><br>
+{#    <table border="1">#}
+{#        <tr>#}
+{#            <th>idJson</th>#}
+{#            <th>TypeObject</th>#}
+{#            <th>Name</th>#}
+{#            <th>Address</th>#}
+{#            <th>global_id</th>#}
+{#            <th>Social Privileges</th>#}
+{#            <th>District</th>#}
+{#        </tr>#}
+{#        {% for row in data %}#}
+{#            <tr>#}
+{#                <td>{{row.idJson}}</td>#}
+{#                <td>{{row.TypeObject}}</td>#}
+{#                <td>{{row.Name}}</td>#}
+{#                <td>{{row.Adress}}</td>#}
+{#                <td>{{row.global_id}}</td>#}
+{#                <td>{{row.SocialPrivileges}}</td>#}
+{#                <td>{{row.District}}</td>#}
+{#            </tr>#}
+{#        {% endfor %}#}
+{#    </table>#}
+    {% for row in data %}
+        {{ row }}<br>
+    {% endfor %}
+</body>
+</html>
