@@ -10,5 +10,4 @@ for bomonque in json:
                     for cors in kaf[kaf2]:
                         for cozerog in cors:
                             a.append(cors[cozerog])
-                            break
 print(' '.join([str(i) for i in a[0]]))
